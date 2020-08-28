@@ -16,18 +16,43 @@
             <option>dark</option>
         </select>
         <input id="submit" type="submit" />
+        <br><br>
+            <input class="coffee-search" type="text" id="myInput" onkeyup="renderCoffees(coffees)"    placeholder="Search for Coffee.." title="Type in a name">
+            <input id="submit2" type="submit" />
+        </select>
     </form>
 
     <table>
         <thead>
-            <tr>
-                <th>ID</th>
-                <th>NAME</th>
-                <th>ROAST</th>
-            </tr>
+            <div class="coffee">
+                <th class="id-selection">ID</th>
+                <th class="name-selection">NAME</th>
+                <th class="roast-selection">ROAST</th>
+            </div>
         </thead>
         <tbody id="coffees"></tbody>
     </table>
+
+<!--    <div>-->
+<!--        <h1>ID</h1>-->
+<!--        <h1>NAME</h1>-->
+<!--        <label for="coffees">Coffee Selection!</label><br>-->
+<!--        <input type="text" id="myInput" onkeyup="renderCoffees(coffees)" placeholder="Search for Coffee.." title="Type in a name">-->
+<!--        <input id="submit" type="submit" />-->
+<!--        <h1>ROAST</h1>-->
+<!--        <label for="roast-selection">Roast Selection!</label><br>-->
+<!--        <input type="text" id="myInput" onkeyup="updateCoffees(e)" placeholder="Search for Roast Selection.." title="Type in a name">-->
+<!--        <input id="submit" type="submit" />-->
+
+<!--    </div>-->
+<!--    <form>-->
+<!--        <label for="coffees">Coffees!</label><br>-->
+<!--            <input type="text" label="coffees" name="coffees"><br>-->
+
+<!--        <label for="roast-selection">Roast Selection!</label><br>-->
+<!--        <input type="text" label="roast-selection" name="roast-selection"><br>-->
+
+<!--    </form>-->
 
     <script src="main.js"></script>
 </body>
