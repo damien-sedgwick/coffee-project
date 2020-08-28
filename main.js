@@ -4,22 +4,22 @@ function renderCoffee(coffee) {
     var html = '<div class="coffee">';
     // html += '< class="id-selection">' + coffee.id + '</>';
     html += '<h3 class="name-selection">' + coffee.name + '</h3>';
-    html += '<p class="roast.selection">' + coffee.roast + '</p>';
+    html += '<p class="roast-selection">' + coffee.roast + '</p>';
     html += '</div>';
 
     return html;
 }
 
 function renderCoffees(coffees) {
-    var html = '<input class="coffee-search';
+    var html = ' ';
     for(var i = coffees.length - 1; i >= 0; i--) {
         html += renderCoffee(coffees[i]);
     }
     return html;
 }
 
-function updateCoffees(e) {
-    e.preventDefault(); // don't submit the form, we just want to update the data
+function updateCoffees() {
+    //e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
@@ -51,9 +51,13 @@ var coffees = [
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
+var myInput = document.getElementById("myInput")
 
 tbody.innerHTML = renderCoffees(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
+myInput.addEventListener("keyup", function(){
+    updateCoffees(myInput.value)
+})
 
 
