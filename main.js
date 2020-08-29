@@ -55,20 +55,20 @@ var newCoffee = function (type, name){
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
-    {id: 1, name: 'Light City', roast: 'light'},
-    {id: 2, name: 'Half City', roast: 'light'},
-    {id: 3, name: 'Cinnamon', roast: 'light'},
-    {id: 4, name: 'City', roast: 'medium'},
-    {id: 5, name: 'American', roast: 'medium'},
-    {id: 6, name: 'Breakfast', roast: 'medium'},
-    {id: 7, name: 'High', roast: 'dark'},
-    {id: 8, name: 'Continental', roast: 'dark'},
-    {id: 9, name: 'New Orleans', roast: 'dark'},
-    {id: 10, name: 'European', roast: 'dark'},
-    {id: 11, name: 'Espresso', roast: 'dark'},
-    {id: 12, name: 'Viennese', roast: 'dark'},
-    {id: 13, name: 'Italian', roast: 'dark'},
-    {id: 14, name: 'French', roast: 'dark'},
+    {id: 1, name: 'Pop Off', roast: 'light'},
+    {id: 2, name: 'Tail', roast: 'light'},
+    {id: 3, name: 'Zoom', roast: 'light'},
+    {id: 4, name: 'Jet', roast: 'medium'},
+    {id: 5, name: 'Erase', roast: 'medium'},
+    {id: 6, name: 'Copycat', roast: 'medium'},
+    {id: 7, name: 'Explosion', roast: 'dark'},
+    {id: 8, name: 'Dark Shadow', roast: 'dark'},
+    {id: 9, name: 'Decay', roast: 'dark'},
+    {id: 10, name: 'Blackhole', roast: 'dark'},
+    {id: 11, name: 'Fiber Master', roast: 'dark'},
+    {id: 12, name: 'Half Hot Half Cold', roast: 'dark'},
+    {id: 13, name: 'All For one', roast: 'dark'},
+    {id: 14, name: 'One For All', roast: 'dark'},
 ];
 
 var tbody = document.querySelector('#coffees');
