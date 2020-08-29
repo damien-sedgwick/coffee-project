@@ -11,10 +11,14 @@
     <title>Quirking Coffee!</title>
 </head>
 <body>
-    <img src="img/my-hero.jpeg">
-    <h1>Quirking Coffee!</h1>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <img src="img/my-hero.jpeg">
+            <h1 class="display-4">Quirking Coffee</h1>
+        </div>
+    </div>
 
-    <form>
+    <form class="float-left">
         <label for="roast-selection"></label>
         <select id="roast-selection">
             <option>All</option>
@@ -28,7 +32,7 @@
         <input id="submit" type="submit" />
     </form>
     <br><br>
-    <form>
+    <form class="float-right">
         <label for="roast-selection2"></label>
         <select id="roast-selection2">
         <option>light</option>
