@@ -11,28 +11,42 @@
     <title>Quirking Coffee!</title>
 </head>
 <body>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <img src="img/my-hero.jpeg">
-            <h1 class="display-4">Quirking Coffee</h1>
-        </div>
-    </div>
 
-    <form class="float-left">
+        <div id="bg">
+
+            <img src="img/All-might.jpg" alt="All-might">
+        </div>
+
+        <div>
+            <h1 class="display-4 text-primary">Quirking Coffee</h1>
+        </div>
+
+    </div>
+    <div class="d-flex flex-column justify-content-center">
+
+        <div>
+           <h4 calss="text-primary">Choose one of our signature coffees</h4>
+       </div>
+
+    <form>
         <label for="roast-selection"></label>
         <select id="roast-selection">
-            <option>All</option>
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
+            <option calss="text-primary">All</option>
+            <option calss="text-primary">light</option>
+            <option calss="text-primary">medium</option>
+            <option calss="text-primary">dark</option>
         </select>
 
         <br><br>
-            <input class="coffee-search" type="text" id="myInput" placeholder="Search for Coffee.." title="Type in a name">
+            <input class="coffee-search text-primary" type="text" id="myInput" placeholder="Search for Coffee.." title="Type in a name">
         <input id="submit" type="submit" />
     </form>
     <br><br>
-    <form class="float-right">
+    </div>
+
+    <div>
+    <form>
+        <h4 calss="text-primary">Create Your Own Super Coffee!</h4>
         <label for="roast-selection2"></label>
         <select id="roast-selection2">
         <option>light</option>
@@ -41,21 +55,24 @@
         </select>
 
         <br><br>
-        <input class="coffee-search" type="text" id="newCoffee" placeholder="Name of Coffee.." title="Type in a name">
+        <input class="coffee-search float-right text-primary" type="text" id="newCoffee" placeholder="Name of Coffee.." title="Type in a name">
         <input id="submit4" type="submit" />
 
     </form>
+    </div>
 
+    <div class="d-flex flex-column justify-content-center">
     <table>
         <thead>
             <div class="coffee">
-                <th class="id-selection">ID</th>
-                <th class="name-selection">NAME</th>
-                <th class="roast-selection">ROAST</th>
+                <th class="id-selection text-primary">ID</th>
+                <th class="name-selection text-primary">NAME</th>
+                <th class="roast-selection text-primary">ROAST</th>
             </div>
         </thead>
-        <tbody id="coffees"></tbody>
+        <tbody class="mx-auto text-primary" id="coffees"></tbody>
     </table>
+    </div>
 
 
     <script src="main.js"></script>
