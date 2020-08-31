@@ -36,3 +36,9 @@ td, th {
     margin: 0 !important;
     padding: 0 !important;
 }
+
+tbody{
+display: flex !important;
+    justify-content: space-around !important;
+    text-align: center !important;
+}

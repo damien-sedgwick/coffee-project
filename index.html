@@ -12,15 +12,16 @@
 </head>
 <body>
 
-<div class="jumbotron jumbotron-fluid pt-0">
+<div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <img src="img/my-hero.jpeg" class="image-fluid">
+        <img src="img/my-hero.jpeg" class="image-fluid ">
         <h1 class="display-4 text-center">Quirking Coffee!</h1>
     </div>
 </div>
 
 
 <div>
+    <div class="col 6">
     <div class="d-flex flex-column justify-content-center">
 
         <div>
@@ -42,8 +43,9 @@
     </form>
     <br><br>
     </div>
+    </div>
 
-    <div>
+    <div class="col-6">
     <form>
         <h4 class="text-primary">Create Your Own Super Coffee!</h4>
         <label for="roast-selection2"></label>
@@ -54,25 +56,30 @@
         </select>
 
         <br><br>
-        <input class="coffee-search float-right text-primary" type="text" id="newCoffee" placeholder="Name of Coffee.." title="Type in a name">
+        <input class="coffee-search text-primary" type="text" id="newCoffee" placeholder="Name of Coffee.." title="Type in a name">
         <input id="submit4" type="submit" />
 
     </form>
     </div>
-
-    <div class="d-flex flex-column justify-content-center">
+<br><br>
+    <div class="col-12">
+        <div class="row">
     <table>
         <thead>
-            <div class="coffee">
-                <th class="id-selection text-primary">ID</th>
-                <th class="name-selection text-primary">NAME</th>
-                <th class="roast-selection text-primary">ROAST</th>
+            <div class="coffee col-12 d-flex justify-content-around">
+                <div class="id-selection text-primary">ID</div>
+
+                <div class="name-selection text-primary">NAME</div>
+
+                <div class="roast-selection text-primary">ROAST</div>
             </div>
         </thead>
-        <tbody class="mx-lr-4 px-lr-4 text-primary d-flex justify-content-around" id="coffees"></tbody>
+        <tbody class=" text-primary d-flex justify-content-around flex-wrap  col-12" id="coffees"></tbody>
     </table>
+        </div>
     </div>
 </div>
+
 
     <script src="main.js"></script>
 
