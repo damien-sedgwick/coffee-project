@@ -12,23 +12,21 @@
     <title>Quirking Coffee!</title>
 </head>
 <body>
-
-<div class="jumbotron jumbotron-fluid">
-    <div class="container">
-        <img src="img/my-hero.jpeg" class="image-fluid ">
-        <h1 class="display-4 text-center">Quirking Coffee!</h1>
+<div class="jumbotron jumbotron-fluid bg-light text-dark d-none d-md-block mb-5">
+    <img src="img/my-hero.jpeg" class="card-img cover" alt="myHero">
+    <div class="display-4" id="yellow">
+        <h1 class="card-title bg-light text-center text-danger">Quirking Coffee!</h1>
     </div>
 </div>
-
-
 <div class="container2">
-    <div class="col">
-        <div class="row">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
             <div id="inputs-div">
-                <div class=" " id="coffee-select">
+                <div id="coffee-select">
                     <div class="d-flex flex-column justify-content-center">
                         <form>
-                            <h4 class="text-primary">Choose One Of Our Signature Coffees!</h4>
+                            <h4 class="text-dark">Choose One Of Our Signature Coffees!</h4>
                             <label for="roast-selection" class="d-flex justify-content-center"></label>
                             <select id="roast-selection">
                                 <option class="text-primary">All</option>
@@ -45,57 +43,54 @@
                         </form>
                         <br><br>
                     </div>
-
                 </div>
             </div>
-            <div class="col">
-                <div class="col-12 d-flex justify-content-end" id="create-coffee">
-                    <form>
-                        <h4 class="text-primary">Create Your Own Super Coffee!</h4>
-                        <label for="roast-selection2"></label>
-                        <select id="roast-selection2">
-                            <option>light</option>
-                            <option>medium</option>
-                            <option>dark</option>
-                        </select>
+        </div>
+        <div class="col"></div>
+        <div class="col">
+            <div class="col-12 d-flex justify-content-end" id="create-coffee">
+                <form>
+                    <h4 class="text-dark">Create Your Own Super Coffee!</h4>
+                    <label for="roast-selection2"></label>
+                    <select id="roast-selection2">
+                        <option>light</option>
+                        <option>medium</option>
+                        <option>dark</option>
+                    </select>
 
-                        <br><br>
-                        <input class="coffee-search text-primary" type="text" id="newCoffee"
-                               placeholder="Name of Coffee.."
-                               title="Type in a name">
-                        <input id="submit4" type="submit"/>
-
-                    </form>
-                </div>
+                    <br><br>
+                    <input class="coffee-search text-primary" type="text" id="newCoffee"
+                           placeholder="Name of Coffee.."
+                           title="Type in a name">
+                    <input id="submit4" type="submit"/>
+                </form>
             </div>
-            <br><br>
-            <div class="row">
-                <div class="col-12">
-                    <table>
-                        <thead>
-                        <div class="coffee d-flex justify-content-center">
-                            <div class="id-selection text-primary d-none">ID</div>
+        </div>
+        <div class="col"></div>
+        <div class="row">
+            <div class="col-12">
+                <table>
+                    <thead>
+                    <div class="coffee d-flex justify-content-center">
+                        <div class="id-selection text-primary d-none">ID</div>
 
-                            <div class="name-selection text-primary">NAME</div>
+                        <div class="name-selection text-dark">NAME</div>
 
-                            <div class="roast-selection text-primary">ROAST</div>
+                        <div class="roast-selection text-dark">ROAST</div>
+                    </div>
+                    </thead>
+                    <div class="row">
+                        <div class="col-7">
+                            <tbody class=" text-primary d-flex justify-content-around flex-wrap col "
+                                   id="coffees"></tbody>
                         </div>
-                        </thead>
-                        <div class="row">
-                            <div class="col-7">
-                                <tbody class=" text-primary d-flex justify-content-around flex-wrap col "
-                                       id="coffees"></tbody>
-                            </div>
-                        </div>
-
-
-                    </table>
-                </div>
+                    </div>
+                </table>
             </div>
         </div>
     </div>
 </div>
-
+</div>
 
 <script src="main.js"></script>
 
