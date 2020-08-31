@@ -87,4 +87,11 @@ tbody{
     margin: 0 !important;
 }
 
+input{
+    background: white;
+}
+
+img.card-img.cover{
+    height: 650px;
+}
 
