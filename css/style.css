@@ -27,4 +27,12 @@ td, th {
     min-width: 50%;
     min-height: 50%;
 }
+.roast-selection{
+    display: flex;
+    align-content: center;
+}
 
+.jumbotron {
+    margin: 0 !important;
+    padding: 0 !important;
+}

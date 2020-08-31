@@ -12,29 +12,28 @@
 </head>
 <body>
 
-        <div id="bg">
-
-            <img src="img/All-might.jpg" alt="All-might">
-        </div>
-
-        <div>
-            <h1 class="display-4 text-primary">Quirking Coffee</h1>
-        </div>
-
+<div class="jumbotron jumbotron-fluid pt-0">
+    <div class="container">
+        <img src="img/my-hero.jpeg" class="image-fluid">
+        <h1 class="display-4 text-center">Quirking Coffee!</h1>
     </div>
+</div>
+
+
+<div>
     <div class="d-flex flex-column justify-content-center">
 
         <div>
-           <h4 calss="text-primary">Choose one of our signature coffees</h4>
+           <h4 class="text-primary">Choose one of our signature coffees</h4>
        </div>
 
     <form>
-        <label for="roast-selection"></label>
+        <label for="roast-selection" class="d-flex justify-content-center"></label>
         <select id="roast-selection">
-            <option calss="text-primary">All</option>
-            <option calss="text-primary">light</option>
-            <option calss="text-primary">medium</option>
-            <option calss="text-primary">dark</option>
+            <option class="text-primary">All</option>
+            <option class="text-primary">light</option>
+            <option class="text-primary">medium</option>
+            <option class="text-primary">dark</option>
         </select>
 
         <br><br>
@@ -46,7 +45,7 @@
 
     <div>
     <form>
-        <h4 calss="text-primary">Create Your Own Super Coffee!</h4>
+        <h4 class="text-primary">Create Your Own Super Coffee!</h4>
         <label for="roast-selection2"></label>
         <select id="roast-selection2">
         <option>light</option>
@@ -70,10 +69,10 @@
                 <th class="roast-selection text-primary">ROAST</th>
             </div>
         </thead>
-        <tbody class="mx-auto text-primary" id="coffees"></tbody>
+        <tbody class="mx-lr-4 px-lr-4 text-primary d-flex justify-content-around" id="coffees"></tbody>
     </table>
     </div>
-
+</div>
 
     <script src="main.js"></script>
 
