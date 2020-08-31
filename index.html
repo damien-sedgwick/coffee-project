@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Quirking Coffee!</title>
 </head>
@@ -19,75 +20,91 @@
     </div>
 </div>
 
-
-<div>
-    <div class="col 6">
-    <div class="d-flex flex-column justify-content-center">
-
-        <div>
-           <h4 class="text-primary">Choose one of our signature coffees</h4>
-       </div>
-
-    <form>
-        <label for="roast-selection" class="d-flex justify-content-center"></label>
-        <select id="roast-selection">
-            <option class="text-primary">All</option>
-            <option class="text-primary">light</option>
-            <option class="text-primary">medium</option>
-            <option class="text-primary">dark</option>
-        </select>
-
-        <br><br>
-            <input class="coffee-search text-primary" type="text" id="myInput" placeholder="Search for Coffee.." title="Type in a name">
-        <input id="submit" type="submit" />
-    </form>
-    <br><br>
-    </div>
-    </div>
-
-    <div class="col-6">
-    <form>
-        <h4 class="text-primary">Create Your Own Super Coffee!</h4>
-        <label for="roast-selection2"></label>
-        <select id="roast-selection2">
-        <option>light</option>
-        <option>medium</option>
-        <option>dark</option>
-        </select>
-
-        <br><br>
-        <input class="coffee-search text-primary" type="text" id="newCoffee" placeholder="Name of Coffee.." title="Type in a name">
-        <input id="submit4" type="submit" />
-
-    </form>
-    </div>
-<br><br>
-    <div class="col-12">
+<div class="container2">
+    <div class="col">
         <div class="row">
-    <table>
-        <thead>
-            <div class="coffee col-12 d-flex justify-content-around">
-                <div class="id-selection text-primary">ID</div>
+    <div id="inputs-div">
+        <div class=" " id="coffee-select">
+            <div class="d-flex flex-column justify-content-center">
+                <form>
+                    <h4 class="text-primary">Choose One Of Our Signature Coffees!</h4>
+                    <label for="roast-selection" class="d-flex justify-content-center"></label>
+                    <select id="roast-selection">
+                        <option class="text-primary">All</option>
+                        <option class="text-primary">light</option>
+                        <option class="text-primary">medium</option>
+                        <option class="text-primary">dark</option>
+                    </select>
 
-                <div class="name-selection text-primary">NAME</div>
-
-                <div class="roast-selection text-primary">ROAST</div>
+                    <br><br>
+                    <input class="coffee-search text-primary" type="text" id="myInput" placeholder="Search for Coffee.."
+                           title="Type in a name">
+                    <input id="submit" type="submit"/>
+                </form>
+                <br><br>
             </div>
-        </thead>
-        <tbody class=" text-primary d-flex justify-content-around flex-wrap  col-12" id="coffees"></tbody>
-    </table>
         </div>
+    </div>
+<div class="col">
+        <div class="col-12 d-flex justify-content-end" id="create-coffee">
+            <form>
+                <h4 class="text-primary">Create Your Own Super Coffee!</h4>
+                <label for="roast-selection2"></label>
+                <select id="roast-selection2">
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>dark</option>
+                </select>
+
+                <br><br>
+                <input class="coffee-search text-primary" type="text" id="newCoffee" placeholder="Name of Coffee.."
+                       title="Type in a name">
+                <input id="submit4" type="submit"/>
+
+            </form>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-12">
+            <table>
+                <thead>
+                <div class="coffee d-flex justify-content-center">
+                    <div class="id-selection text-primary d-none">ID</div>
+
+                    <div class="name-selection text-primary">NAME</div>
+
+                    <div class="roast-selection text-primary">ROAST</div>
+                </div>
+                </thead>
+                <div class="row">
+                    <div class="col-7">
+                        <tbody class=" text-primary d-flex justify-content-around flex-wrap col " id="coffees"></tbody>
+                    </div>
+                </div>
+
+
+            </table>
+        </div>
+    </div>
+</div>
     </div>
 </div>
 
 
-    <script src="main.js"></script>
+<script src="main.js"></script>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 </body>
 </html>

@@ -67,7 +67,7 @@ var coffees = [
     {id: 10, name: 'Blackhole', roast: 'dark'},
     {id: 11, name: 'Fiber Master', roast: 'dark'},
     {id: 12, name: 'Half Hot Half Cold', roast: 'dark'},
-    {id: 13, name: 'All For one', roast: 'dark'},
+    {id: 13, name: 'All For One', roast: 'dark'},
     {id: 14, name: 'One For All', roast: 'dark'},
 ];
 

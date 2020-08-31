@@ -38,7 +38,28 @@ td, th {
 }
 
 tbody{
-display: flex !important;
-    justify-content: space-around !important;
+
+    /*margin-right: 6rem !important;*/
+    /*margin-left: 6rem !important;*/
+    /*padding-right: 6rem !important;*/
+    /*padding-left: 6rem !important;*/
     text-align: center !important;
+    justify-content: space-evenly !important;
+
 }
+.roast-selection{
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding-right: 5rem!important;
+    padding-left: 5rem !important;
+}
+
+.container2{
+    display: flex !important;
+    justify-content: center !important;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+
